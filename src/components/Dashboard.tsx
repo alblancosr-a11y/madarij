@@ -60,7 +60,7 @@ export default function Dashboard({ state, onStudy, onNavigate, todaySection }: 
       { icon: null, label: 'معدل الإتقان', value: `${masteryRate}%` }
     ].map((stat, i) => (
       <Card key={i} className="py-5 px-5 flex flex-col items-center justify-center gap-2.5 min-w-0 shadow-sm text-center">
-        <div className="flex items-center justify-center gap-2 min-w-0 w-full pt-1">
+        <div className="flex items-center justify-center gap-2 min-w-0 w-full pt-1 relative top-1">
           {stat.icon && (
             <stat.icon
               size={16}
@@ -72,7 +72,9 @@ export default function Dashboard({ state, onStudy, onNavigate, todaySection }: 
             {stat.label}
           </span>
         </div>
-        <p className="text-3xl font-extrabold text-[var(--text-0)] tabular-nums leading-none truncate">{stat.value}</p>
+       <p className="text-3xl font-extrabold text-[var(--text-0)] tabular-nums leading-[1.2] py-0.5 truncate">
+  {stat.value}
+</p>
       </Card>
     ))}
   </div>
