@@ -72,7 +72,7 @@ export default function AddPoemModal({ onClose, onAdd, editPoem }: Props) {
               <Input
   value={title}
   onChange={e => setTitle(e.target.value)}
-  placeholder="مثال: قصيدة المتنبي"
+  placeholder="مثال: قصيدة بمَ التعلّل"
   className="pr-[80px] [text-indent:22px]"
 />
             </div>
@@ -102,7 +102,7 @@ export default function AddPoemModal({ onClose, onAdd, editPoem }: Props) {
            <TextArea
   value={rawText}
   onChange={e => { setRawText(e.target.value); setError(''); }}
-  placeholder={"على قدر أهل العزم تأتي العزائمُ\nوتأتي على قدر الكرام المكارمُ"}
+placeholder={"بمَ التعلّلُ لا أهلٌ وَلا وَطَنُ\nولا ندِيمٌ وَلا كأسٌ وَلا سكَنُ"}
   rows={8}
   dir="rtl"
   style={{
