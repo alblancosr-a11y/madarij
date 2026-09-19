@@ -265,7 +265,8 @@ export default function App() {
                   }`}
                 >
                   <span
-                    className={`absolute top-0.5 w-4 h-4 rounded-full bg-white shadow-sm transition-all duration-200 ${
+                    className={`absol
+                      ute top-0.5 w-4 h-4 rounded-full bg-white shadow-sm transition-all duration-200 ${
                       settings.darkMode ? 'right-0.5' : 'right-auto left-0.5'
                     }`}
                   />
